@@ -1,2 +1,5 @@
 # Temperature-Control-System-by-Peltier
 Designing high precision temperature balancing and control system by using RTD (Resistance Temperature Detector which is also known Pt100), Peltier, computer fan, CPU cooler and Arduino.
+
+  I used peltier, rtd, driver and Arduino. RTD is a temperature sensor, it has platin resistor inside of itself. First, I connected a resistor (330 ohm) as series rtd so that I can measure voltage on rtd’s resistor by analogRead on Arduino and then I calculated resistance value of rtd by using voltage divider and transform to temperature by using a formula. I calibrate rtd by measuring ice and room temperature by comparing with different temperature sensor (thermocouple probe with adaptor). Offset value was equal to 5.85 degree. Peltier is used for heat sink; it has 2 sides, while one side is getting hot, other side is getting cold. 
+	 I used a driver to control which condition I want to Peltier on and off. Results were not as expected and include noises. So, I applied Kalman filter to reduce noise on plot and to make more stable. 
