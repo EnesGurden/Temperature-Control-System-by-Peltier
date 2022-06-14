@@ -1,4 +1,6 @@
-![](/image1.png)My purpose was that designing high
+![](/image1.png)
+  
+  My purpose was that designing high
 precision temperature balancing and control system by using RTD
 (Resistance Temperature Detector which is also known Pt100), Peltier,
 computer fan, CPU cooler and Arduino. RTD which is shown in the *Figure
@@ -10,7 +12,9 @@ formula:
 
 $$T = \frac{\frac{R_{x}}{R_{0}} - 1}{\alpha}$$
 
-![](image/image3.png)When I examined output of temperature
+![](image/image3.png)
+
+  When I examined output of temperature
 values, I recognize there is an offset value. So, I calibrated RTD to
 find offset value by measuring ice and room temperature by comparing
 with a temperature sensor (thermocouple probe with adaptor). Offset
@@ -23,11 +27,15 @@ sides, while one side is getting hot, other side is getting cold. If we
 wanted to cool down excessively, we should get Peltier's hot side to
 cold. Otherwise, Peltier would burn.
 
-![](image/image5.jpeg)So, I used computer fan to get Peltier's
+![](image/image5.jpeg)
+
+  So, I used computer fan to get Peltier's
 hot side for cooling. Finally, I designed the system as in the *Figure
 3*.
 
-![](image/image7.jpeg)I needed a driver to control which
+![](image/image7.jpeg)
+
+  I needed a driver to control which
 condition I want to Peltier on and off. I used BTS7960 which is a motor
 driver that control system by receiving PWM signals and making some
 functions to component that we can used i.e., h bridge function. I used
